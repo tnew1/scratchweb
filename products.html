@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Steaks</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Existing CSS is kept here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #d2b48c url('https://www.transparenttextures.com/patterns/light-paper-fibers.png') repeat;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid #8b4513;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background: #8b4513;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background: #deb887;
+            color: #333;
+            border-radius: 5px;
+        }
+
+        .section {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #8b4513;
+            border-radius: 5px;
+            background: #f5deb3;
+        }
+
+        h2 {
+            color: #8b4513;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        iframe {
+            display: block;
+            margin: 0 auto;
+            border: 2px solid #8b4513;
+            border-radius: 5px;
+        }
+
+        .steak-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border: 2px solid #8b4513;
+            border-radius: 5px;
+        }
+
+        .return-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #8b4513;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            width: 150px;
+        }
+
+        .return-button:hover {
+            background: #deb887;
+            color: #333;
+        }
+
+        .game-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .game-link a {
+            font-size: 18px;
+            color: #8b4513;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .game-link a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #8b4513;
+            color: white;
+            border-top: 2px solid #deb887;
+        }
+
+        footer a {
+            color: #f5deb3;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to the World of Steaks</h1>
+        <p>Your ultimate guide to steak perfection!</p>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#cuts">Steak Cuts</a></li>
+            <li><a href="#prep">Preparation Tips</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#graph">Analysis</a></li>
+        </ul>
+    </nav>
+
+    <div id="cuts" class="section">
+        <h2>Popular Steak Cuts</h2>
+        <ol>
+            <li>Ribeye
+                <ul>
+                    <li>Rich flavor</li>
+                    <li>High fat content</li>
+                </ul>
+            </li>
+            <li>Filet Mignon
+                <ul>
+                    <li>Lean and tender</li>
+                    <li>Perfect for special occasions</li>
+                </ul>
+            </li>
+            <li>New York Strip
+                <ul>
+                    <li>Firm texture</li>
+                    <li>Balanced marbling</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div id="prep" class="section">
+        <h2>Preparation Tips</h2>
+        <p>Here are some quick tips to make the perfect steak:</p>
+        <ul>
+            <li>Season generously with salt and pepper.</li>
+            <li>Let the steak rest before slicing.</li>
+            <li>Use a meat thermometer for perfect doneness.</li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/A__6QyhqdZA" 
+            title="YouTube video on steak preparation" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+
+    <div id="gallery" class="section">
+        <h2>Steak Gallery</h2>
+        <img src="https://inkristaskitchen.com/wp-content/uploads/2022/04/air-fryer-ribeye-steak-comp-10-1.jpg" alt="A delicious grilled steak" class="steak-image">
+    </div>
+
+    <div id="graph" class="section" style="display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px;">
+        <h2 style="text-align: center; margin-bottom: 20px;">Steak Popularity Analysis</h2>
+        <div style="border: 2px solid #8b4513; border-radius: 10px; padding: 15px; background-color: #f5deb3; max-width: 800px; width: 100%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+            <div class='tableauPlaceholder' id='viz1733850277064' style='width: 100%;'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Steak Preference Dashboard' src='https://public.tableau.com/static/images/St/SteakTemperaturePreference/SteakPreferenceDashboard/1_rss.png' style='border: none; width: 100%;' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='SteakTemperaturePreference/SteakPreferenceDashboard' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https://public.tableau.com/static/images/St/SteakTemperaturePreference/SteakPreferenceDashboard/1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object>
+            </div>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1733850277064');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '100%';
+            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+    </div>
+    
+    <div class="game-link">
+        <a href="snake-game.html">Play the Snake Game</a>
+    </div>
+
+    <a href="index.html" class="return-button">Back to Home</a>
+
+    <footer>
+        <p><a href="#top">Back to top</a></p>
+        <p>&copy; 2024 Steaks Enthusiasts</p>
+    </footer>
+</body>
+</html>
